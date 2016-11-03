@@ -1,0 +1,59 @@
+body {
+    margin: 0 auto;
+}
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+#handle {
+    position: absolute;
+    height: 110%;
+    width: 8px;
+    left: -8px;
+    top: -5%;
+    border-radius: 4px;
+    background: #4A90E2;
+    z-index: 100;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    overflow: visible;
+}
+#handle:before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 20px;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -moz-transform: translateY(-50%) translateX(-50%);
+    -ms-transform: translateY(-50%) translateX(-50%);
+    -o-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+    background: #4A90E2 url(https://d3k90kvix375hb.cloudfront.net/assets/home/scrubber/scrubber-grabber-c8a549340eb229d71cbfd7e056de58f2e04112c26ef8562a5a39508ec287a531.svg) no-repeat center;
+    border-radius: 4px;
+}
+.middle{
+    width: 1000px;
+    margin: 0 auto;
+    background-color: teal;
+    color: white;
+    height: 550px;
+    position: relative;
+    overflow: hidden;
+}
+.after{
+    position: absolute;
+    background-color: yellow;
+    overflow: hidden;
+    width: 0px;
+    border-right-width: 4px;
+    border-right-style: solid;
+    border-right-color: #000000;
+}
+.before{
+	position: absolute;
+    background-color: red;
+    overflow: hidden;
+    width: 1000px;
+}
